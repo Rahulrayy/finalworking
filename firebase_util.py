@@ -1,6 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials, db
 import os
+import json  # 🔧 You missed this import
 
 # Initialize Firebase
 if not firebase_admin._apps:
@@ -10,6 +11,7 @@ if not firebase_admin._apps:
         cred = credentials.Certificate(firebase_dict)
     else:
         raise FileNotFoundError("FIREBASE_KEY_JSON environment variable not set")
+
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://receipt-generator-95b80-default-rtdb.asia-southeast1.firebasedatabase.app/'
     })
