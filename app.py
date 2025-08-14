@@ -53,11 +53,12 @@ except Exception as e:
 
 # --- Auth Users ---
 USERS = {
-    'mousui': 'pass1',
-    'prabal': 'pass2',
-    'rahul': 'pass3'
+    'Rita Maity': 'RMNBP@2025',
+    'Bidhan Hazra': 'NBPBH@2025',
+    'Mousumi Ray': 'MouNBP'
+
 }
-ADMIN_PASSWORD = "admin123"
+ADMIN_PASSWORD = "DBVIWER"
 
 # --- Receipt Number ---
 def get_next_receipt_number():
